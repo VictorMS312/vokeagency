@@ -1,0 +1,953 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.geral {
+    height: 100%;
+    width: 100%;
+    /* margin: 2px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    margin-bottom: 130px;
+    /* grid-template-columns: auto auto; */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#logovoke {
+    height: 300px;
+    width: 300px;
+    margin-top: -60px;
+    justify-content: start;
+    
+}
+
+.nav {
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+    margin-bottom: -120px;
+    /* background-color: aqua; */
+}
+
+.nav ul{
+    list-style: none;
+    margin: -150px 35px ;
+    padding: 0px;
+    display: flex;
+    gap: 30px;
+    justify-content:right;
+    font-size: 20px;
+}
+
+.nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav ul a:hover {
+    color: rgb(255, 123, 0);
+}
+
+
+
+.servh1{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-left: 40px;
+}
+
+h1 {
+    display: flex;
+    margin: 10px;
+    margin-left: 20px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h2 {
+    margin: 50px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.cont {
+    display: flex;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 180px;
+    align-items: flex-start;
+    /* margin-left: 120px; */
+   
+    
+}
+
+.itens  {
+    display: flex;
+    flex: 1 1 200px;
+    max-width: 300px;
+    height: 300px;
+    /* width:90%; */
+    /* border: 1px solid black; */
+    background: url(imagens/embreve.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px -4px;
+}
+
+.itens:hover {
+    border: 1px solid rgb(230, 230, 255);
+}
+
+#s1 {
+    background: url(imagens/cartazigreja2servico.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#s2 {
+    background: url(imagens/cartazigreja3servico.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#s3 {
+    background: url(imagens/igrejadisciouladoservico.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#s4 {
+    background: url(imagens/mundoservico.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#s5 {
+    background: url(imagens/pizzaria2servico.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#s6 {
+    background: url(imagens/porscheservico.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#s7 {
+    background: url(imagens/tropicalservico.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#s8 {
+    background: url(imagens/Virulyservico.png);
+    background-size: contain;
+    background-position: center;
+}
+
+#v1 {
+   display: flex; 
+   margin: 20px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+   align-items: center;
+   justify-content: center;
+   height: 500px;
+   box-shadow: 1px 1px 5px 1px;
+   border-radius: 10px;
+}
+
+#capav1 {
+    background: url(imagens/vídeos/mínigrejinhaservico.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.txtsobre {
+    display: flex;
+    margin: 20px;
+    margin-left: 40px;
+    justify-content: start;
+    }
+
+    h3 {
+        display: flex;
+    margin: 10px;
+    margin-left: 40px;
+    }
+
+    .cardservtxt {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 150px;
+        padding: 0px;
+        font-size: 23px;
+    }
+
+    .botaop2 {
+        height: 65px;
+        width: 200px;
+        margin: 30px 20px;
+        border-radius: 40px;
+        background-color: blue;
+        border: 0px;
+        font-size: 1px;
+        text-decoration: none;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #bannerp {
+        height: 600px;
+        width: 90%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        padding: 25px;
+        background-image: url(imagens/bannerp.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    #bannerp h1 {
+        padding: 20px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        max-width: 50%;
+        color: white;
+    }
+    
+    #bannerp p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin: 10px 0;
+        max-width: 50%;
+        font-size: 20px;
+    }
+    
+    .botaop {
+        height: 65px;
+        width: 200px;
+        margin-top: 30px;
+        border-radius: 40px;
+        background-color: blue;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .botaop:hover {
+        background-color: rgb(1, 32, 133);
+    }
+    
+    .btacaop {
+        font-size: 15px;
+        color: white;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+.va {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: right;
+    margin: 10px;
+    margin-right: 35px;
+    padding: 10px;
+    justify-content: end;
+}
+.serv {
+    justify-content: center;
+    margin: 2px;
+    display: flex;
+    overflow-x: auto;
+   
+}
+
+.servicos1 {
+    height: 190px;
+    width: 300px;
+   
+    background: url(imagens/casamentoserv.jpeg)rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 30px;
+    flex: 0 0 auto;
+    padding: 15px;
+
+}
+
+.servicos2 {
+    height: 180px;
+    width: 300px;
+    background: url(imagens/filmakerserv2.jfif)rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    flex: 0 0 auto;
+    padding: 15px;
+}
+
+.servicos3 {
+    height: 180px;
+    width: 300px;
+    background:url(imagens/socialmedia.jpg)rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 30px;
+    flex: 0 0 auto;
+    padding: 15px;
+}
+
+.servicos4 {
+    height: 180px;
+    width: 300px;
+    background: url(imagens/criacaositeserv3.jpg) rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 30px;
+    flex: 0 0 auto;
+    padding: 15px;
+    
+}
+
+.textoserv {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 60px;
+    font-size: 25px;
+    
+    
+}
+.jobs {
+    justify-content: center;
+    margin: 2px;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.jobitem {
+    height: 500px;
+    width:300px;
+    /* max-width: 400px; */
+    background-color: aqua;
+    border-radius: 30px;
+    flex: 0 0 auto;
+    
+
+}
+
+.jobitem1 {
+    height: 500px;
+    width:300px;
+    /* max-width: 400px; */
+    background:url(imagens/trabalhoshome/casadoacaijob.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    flex: 0 0 auto;
+}
+
+.jobitem2 {
+    height: 500px;
+    width:300px;
+    /* max-width: 400px; */
+    
+    background: url(imagens/trabalhoshome/tropicalnatal.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    flex: 0 0 auto;
+}
+
+.jobitem3 {
+    height: 500px;
+    width:300px;
+    /* max-width: 400px; */
+    background: url(imagens/trabalhoshome/finasjob.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    flex: 0 0 auto;
+}
+
+.jobitem4 {
+    height: 500px;
+    width:300px;
+    /* max-width: 400px; */
+    background:url(imagens/trabalhoshome/tropicalcrepejob.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    flex: 0 0 auto;
+}
+
+.jobs-infotitle {
+    margin-top: 350px;
+    font-size: 30px;
+    justify-content: start;
+    margin-left: 20px;
+    color: white;
+}
+
+.jobs-info {
+    margin: 20px;
+    color: white;
+}
+.coments {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  
+  .coment_item {
+    background-color: rgb(207, 207, 207);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .avatar_nome {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .avatarcoment {
+    width: 50px;
+    height: 50px;
+    background: url(imagens/iconeavatar.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .nome-coment {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .comenttxt{
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+
+.results_in {
+    height: 450px;
+    width: 100%;
+    /* background-color: rgb(134, 134, 28); */
+}
+
+.parcerias {
+    height: 200px;
+    width:90%;
+    
+    justify-content: center;
+    display: flex;
+    grid-template-columns: auto auto;
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    align-items: center;
+}
+
+.imagemparc1 {
+    display: inline;
+    height: 50px;
+    width: 150px;
+    justify-content: start;
+    align-items: start;
+    margin: 40px;
+    margin-left: 120px;
+}
+.imagemparc2 {
+    height: 210px;
+    width: 220px;
+    justify-content: center;
+    align-items: end;
+}
+
+.imagemparc3 {
+    height: 200px;
+    width: 320px;
+    justify-content: center;
+    align-items: end;
+    margin-right: 40px;
+}
+.apresentacao {
+    display: flex;
+    height: 50px;
+    width: 60%;
+    background-color: rgb(77, 77, 77);
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-top: 250px;
+    /* margin-left: 100px; */
+    justify-content: center;
+    padding: 17px;
+    border-radius: 20px;
+    color: white;
+}
+
+.servpag {
+    display: flex;
+    overflow-x: auto;
+    flex: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 1;
+}
+
+.servpagitem {
+    display: flex;
+    height: 370px;
+    width: 270px;
+    background-color: aqua;
+    margin: 20px;
+    border-radius: 20px;
+    flex: 0 0 auto;
+}
+
+.imgservpag {
+    display: flex;
+    height: 35%;
+    width: 85%;
+    background-color: aliceblue;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    border-radius: 10px;
+    flex: 0 0 auto;
+
+}
+
+.redirecionariconewhats {
+    display: flex;
+    margin: 0 auto;
+    height: 20px;
+    width: 20px;
+    margin-left: 1px;
+}
+
+.redirecionariconeinsta {
+    display: flex;
+    margin: 0 auto;
+    height: 20px;
+    width: 20px;
+    margin-left: 1px;
+}
+
+.redirecionariconeemail{
+    display: flex;
+    margin: 0 auto;
+    height: 20px;
+    width: 20px;
+    margin-left: 1px;
+}
+
+.fathercont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: auto auto; */
+}
+
+.contpag {
+    display: flex;
+    
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    color: black;
+}
+
+.horarios {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 0 auto;
+    height: 100%; 
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px 20px 0 0;
+    width: 90%;
+    margin: auto;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.contatofooter {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.contact-iconwhats {
+    width: 50px;
+    height: 50px;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+
+
+.profile-image {
+    width: 220px;
+    height: 150px;
+    
+}
+
+.btreturn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+    margin: 20px;
+    margin-top: 10px;
+    margin-right: 60px;
+    font-size: 25px;
+    color: black;
+}
+
+.btreturn:hover {
+    color: tomato;
+}
+
+
+#copy {
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+
+    .serv {
+        display: flex;
+        justify-content: start;
+        margin-left: 20px;
+    }
+
+    .jobs {
+        display: flex;
+        justify-content: start;
+        margin-left: 30px;
+        flex: 0 0 90%;
+        
+    }
+
+    .coment_item {
+        display: inline;
+        justify-content: center;
+      }
+
+      .coments {
+        flex-wrap: wrap;
+      }
+    
+
+
+}
+
+@media (max-width: 600px) {
+    .itens {
+        flex: 1 1 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #bannerp {
+        height: auto;
+        padding: 25px;
+        align-items: start;
+        text-align: start;
+    }
+
+    #bannerp h1 {
+        font-size: 35px;
+        max-width: 50%;
+        margin: 10px 0;
+    }
+
+    #bannerp p {
+        font-size: 16px;
+        max-width: 50%;
+    }
+
+    .botaop {
+        width: 180px;
+        height: 50px;
+        text-decoration: none;
+    }
+
+    .btacaop {
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .parcerias {
+        height: 100px;
+    }
+
+    .imagemparc1 {
+        height: 40px;
+        width: 120px;
+        margin-left: 150px;
+      
+    }
+
+    .imagemparc2 {
+        height: 150px;
+        width: 150px;
+    }
+
+    .imagemparc3 {
+        height: 130px;
+        width: 200px;
+        margin-right: 130px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 100px;
+        margin-right: 50px;
+        
+    }
+
+}
+
+
+
+@media (max-width: 760px){
+    #logovoke {
+        height: 280px;
+    width: 280px;
+    margin-top: -50px;
+    justify-content: start;
+    }
+
+    .titleban {
+        font-size: x-small;
+            
+    }
+}
+
+@media (max-width: 600px){
+    #logovoke {
+        height: 250px;
+    width: 250px;
+    margin-top: -40px;
+    justify-content: center;
+    grid-template-columns: none;
+    }
+
+    .titleban {
+        font-size: 10px;
+    }
+
+    .nav {
+        display: grid;
+        justify-content: center;
+    }
+
+    .nav ul {
+        display: inline;    
+        opacity: 0;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 70px;
+        margin: 0 auto;
+        margin-right: 50px;
+        
+    }
+
+    .itens {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px){
+    #logovoke {
+        height: 210px;
+    width: 210px;
+    margin-top: -15px;
+    justify-content: start;
+    }
+
+}
+
+
+@media screen and(max-width: 600px){
+    .nav {
+        justify-content: last baseline;
+        
+    }
+}
+
+@media screen and (max-width: 890px) {
+    
+    /* .cont {
+    display: flex;
+    height: 700px;
+    width: 40%;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 230px;
+    flex-wrap: wrap;
+ 
+
+    } */
+
+    .parcerias {
+        height: 100px;
+    }
+
+    .imagemparc1 {
+        height: 30px;
+        width: 120px;
+        margin-left: 150px;
+      
+    }
+
+    .imagemparc2 {
+        height: 110px;
+        width: 150px;
+    }
+
+    .imagemparc3 {
+        height: 100px;
+        width: 200px;
+        margin-right: 110px;
+    }
+    }
+
+
+    @media screen and (max-width: 200px) {
+    
+        .cont {
+            display: flex;
+    height: 700px;
+    width: 40%;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 230px;
+    flex-wrap: wrap;
+    overflow-x: auto;
+
+        }
+
+        .profile-image {
+            margin-right: 150px;
+        }
+
+        
+        }
+
+
+
+
+
