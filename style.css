@@ -70,7 +70,7 @@
     right: 0; /* Posicionando a sidebar à direita */
     background-color: #fff; /* Fundo branco */
     color: #111; /* Cor do texto */
-    overflow-x: hidden;
+    overflow-x: auto;
     transition: 0.3s;
     padding-top: 60px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
@@ -436,7 +436,7 @@ h2 {
     justify-content: center;
     margin: 2px;
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
    
 }
 
@@ -508,7 +508,7 @@ h2 {
     justify-content: center;
     margin: 2px;
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
     gap: 20px;
 }
 
@@ -689,7 +689,7 @@ h2 {
 
 .servpag {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: auto;
     flex: 0 auto;
     margin-top: 20px;
     justify-content: center;
@@ -1096,7 +1096,7 @@ h2 {
     margin-top: 50px;
     margin-left: 230px;
     flex-wrap: wrap;
-    overflow-x: hidden;
+    overflow-x: auto;
 
         }
 
