@@ -9,30 +9,47 @@
 </head>
 <body>
     <div class="header">
+        <!-- <div class="menu-list">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="servico.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </div> -->
             
         <div  class="nav">
-          <nav>
-                <a href="index.html"><img id="logovoke" src="imagens/LOGOPNGPRETA.png" alt="Voke Agency"></a>
-<div class="geral">
-    <!-- Header -->
-    
-     <ul>
-       <a href="index.html">
-               <li>Início</li>
-         </a>
-        <a href="sobre.html">
-                  <li>Sobre</li>
-         </a>
-         <a href="servico.html">
-                        <li>Serviços</li>
-                    </a>
-                    <a href="#contato">
-                        <li>Contato</li>
-                    </a>
-                </ul>
-            </nav>
+        <nav>
+            <a href="index.html"><img id="logovoke" src="imagens/LOGOPNGPRETA.png" alt="Voke Agency"></a>
+            <div class="geral">
+             <ul>
+                <a href="index.html">
+                    <li>Início</li>
+                </a>
+                <a href="sobre.html">
+                    <li>Sobre</li>
+                 </a>
+                 <a href="servico.html">
+                    <li>Serviços</li>
+                 </a>
+                 <a href="contato.html">
+                    <li>Contato</li>
+                 </a>
+             </ul>
+        </nav>
         </div>
     </div>
+    <button class="open-btn" id="openBtn">☰</button> <!-- Botão de abrir sidebar -->
+</nav>
+</div>
+
+<div id="sidebar" class="sidebar">
+<button class="close-btn" id="closeBtn">&times;</button>
+<ul>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html">Sobre</a></li>
+    <li><a href="servico.html">Serviços</a></li>
+    <li><a href="contato.html">Contato</a></li>
+</ul>
+</div>
 
 <video src="imagens/vídeos/vídeoigrejinhaservico.mp4" controls id="v1"></video>
 
@@ -80,6 +97,23 @@
     
 
     <div id="copy"> © Voke Agency 2024 - Todos os direitos reservados</div>
+    <script>
+        // Referências aos elementos
+       const openBtn = document.getElementById("openBtn");
+       const closeBtn = document.getElementById("closeBtn");
+       const sidebar = document.getElementById("sidebar");
+       
+       // Função para abrir a sidebar
+       openBtn.addEventListener("click", () => {
+           sidebar.style.width = "250px"; // Largura da sidebar quando aberta
+       });
+       
+       // Função para fechar a sidebar
+       closeBtn.addEventListener("click", () => {
+           sidebar.style.width = "0"; // Largura da sidebar quando fechada
+       });
+       
+           </script>
 
 </div>
 </body>

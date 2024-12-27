@@ -18,7 +18,7 @@
 .header {
     height: 70px;
     width: 100%;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
     /* grid-template-columns: auto auto; */
     font-family: Arial, Helvetica, sans-serif;
     
@@ -61,6 +61,107 @@
 }
 
 
+/* Sidebar - inicialmente oculta */
+.sidebar {
+    height: 100%;
+    width: 0; /* Largura inicial da sidebar */
+    position: fixed;
+    top: 0;
+    right: 0; /* Posicionando a sidebar à direita */
+    background-color: #fff; /* Fundo branco */
+    color: #111; /* Cor do texto */
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+/* Estilo dos links dentro da sidebar */
+.sidebar a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #d35400; /* Cor ao passar o mouse */
+}
+
+/* Botão de fechar da sidebar */
+.sidebar .close-btn {
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+    left: 25px; /* Ajustando posição para a esquerda */
+    padding: 16px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar .close-btn:hover {
+    color: #f00202; /* Cor ao passar o mouse */
+}
+
+/* Botão de abrir no celular */
+.open-btn {
+    font-size: 30px;
+    position: relative;
+    top: -80px;
+    right: -85%; /* Botão agora posicionado à direita */
+    background-color: #ffffff; /* Cor preta */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Estilo da navegação (desktop) */
+.geral ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.geral ul li {
+    padding: 10px;
+}
+
+.geral ul a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Exibe a sidebar somente em telas menores que 768px (celular) */
+@media (max-width: 768px) {
+    /* Mostrar a sidebar */
+    .sidebar {
+        z-index: 9999; /* Traz a sidebar para frente */
+    }
+
+    /* Esconde os itens da navegação no desktop e os coloca em uma lista no celular */
+    .geral ul {
+        display: none;
+    }
+
+    /* Exibe o botão de abrir */
+    .open-btn {
+        display: block;
+    }
+}
+
+/* Esconde o botão de abrir para desktop */
+@media (min-width: 769px) {
+    .open-btn {
+        display: none;
+    }
+}
+
 
 .servh1{
     display: flex;
@@ -72,7 +173,8 @@
 
 h1 {
     display: flex;
-    margin: 10px;
+    margin-top: 100px;
+    /* margin: 10px; */
     margin-left: 20px;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
@@ -102,13 +204,13 @@ h2 {
     
 }
 
-.itens  {
+/* .itens  {
     display: flex;
     flex: 1 1 200px;
     max-width: 300px;
     height: 300px;
     /* width:90%; */
-    /* border: 1px solid black; */
+    /* border: 1px solid black; 
     background: url(imagens/embreve.jpg);
     background-size: cover;
     background-position: center;
@@ -168,6 +270,28 @@ h2 {
     background: url(imagens/Virulyservico.png);
     background-size: contain;
     background-position: center;
+} */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
 }
 
 #v1 {
@@ -221,6 +345,7 @@ h2 {
     }
 
     .main {
+        margin-top: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -285,20 +410,33 @@ h2 {
     }
 
 .va {
+    /* height: 10px; */
+    width: 100px;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    justify-self: end;
     text-align: right;
     margin: 10px;
     margin-right: 35px;
     padding: 10px;
-    justify-content: end;
+    justify-content: center;
+    color: #000;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s;
 }
+
+.va:hover {
+    color: #d35400;
+    border: 1px solid #d35400;
+  }
 .serv {
     justify-content: center;
     margin: 2px;
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
    
 }
 
@@ -370,7 +508,7 @@ h2 {
     justify-content: center;
     margin: 2px;
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     gap: 20px;
 }
 
@@ -551,7 +689,7 @@ h2 {
 
 .servpag {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     flex: 0 auto;
     margin-top: 20px;
     justify-content: center;
@@ -696,14 +834,22 @@ h2 {
 }
 
 .btreturn {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 auto;
-    margin: 20px;
-    margin-top: 10px;
-    margin-right: 60px;
-    font-size: 25px;
-    color: black;
+  /* height: 10px; */
+  width: 100px;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  justify-self: end;
+  text-align: right;
+  margin: 10px;
+  margin-right: 35px;
+  padding: 10px;
+  justify-content: center;
+  color: #000;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
 .btreturn:hover {
@@ -744,6 +890,19 @@ h2 {
 
       .coments {
         flex-wrap: wrap;
+      }
+
+      .va {
+        font-size: 10px;
+        height: 30px;
+        width: 80px;
+        /* transition: 0.3s; */
+      }
+
+      
+
+      .main {
+        margin-top: 0px;
       }
     
 
@@ -937,7 +1096,7 @@ h2 {
     margin-top: 50px;
     margin-left: 230px;
     flex-wrap: wrap;
-    overflow-x: auto;
+    overflow-x: hidden;
 
         }
 
